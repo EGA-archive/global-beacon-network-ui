@@ -7,14 +7,26 @@ const CustomNavbar = () => {
     <Navbar className="custom-navbar">
       <Container>
         <a
-          className="egalogo"
-          href="https://ega-archive.org/about/ega/"
+          className="crglogotitle"
+          href="https://crg.eu"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="/../egalogo.png" className="egalogo" alt="egalogo" />
+          <img src="/../crglogo.svg" className="crglogotitle" alt="crglogo" />
         </a>
-        <h1 className="beacon-title">EGA Allele Frequency Browser</h1>
+        <a
+          className="crglogotitle"
+          href="https://bsc.es"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/../bsclogo.svg"
+            className="crglogotitle bsc"
+            alt="crglogo"
+          />
+        </a>
+        <h1 className="beacon-title">Global Beacon Network</h1>
       </Container>
     </Navbar>
   );

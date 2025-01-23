@@ -141,7 +141,7 @@ body {
 /* Navbar CSS */
 
 .custom-navbar {
-  background: #3176b1;
+  background: #0099cd;
   border: none;
   height: 77px;
   width: 100%;
@@ -159,10 +159,14 @@ body {
   background-color: deeppink;
 } */
 
-.egalogo {
+.crglogotitle {
   height: 45.2px;
   cursor: pointer;
   margin: 0;
+}
+
+.bsc {
+  margin-left: 30px;
 }
 
 .beacon-title {
@@ -184,7 +188,7 @@ body {
     margin-left: -10%;
   }
 
-  .egalogo {
+  .crglogotitle {
     height: 40.2px;
   }
 }
@@ -360,7 +364,7 @@ body {
     margin-left: 10px;
   }
 
-  .egalogo {
+  .crglogotitle {
     height: 35.2px;
   }
 
@@ -433,7 +437,7 @@ body {
     margin-left: 10px;
   }
 
-  .egalogo {
+  .crglogotitle {
     height: 35.2px;
     margin-left: 6%;
   }
@@ -503,7 +507,7 @@ body {
     margin-left: 10px;
   }
 
-  .egalogo {
+  .crglogotitle {
     height: 35.2px;
   }
 
@@ -548,7 +552,7 @@ body {
 }
 
 .searchbutton {
-  border: 1px solid #3176b1;
+  border: 1px solid #0099cd;
   width: Hug (122px) px;
   height: 40px;
   padding: 10px 20px 10px 20px;
@@ -561,7 +565,7 @@ body {
   font-weight: 700;
   line-height: 16.94px;
   text-align: left;
-  color: #3176b1;
+  color: #0099cd;
   position: relative;
   top: 30px;
   margin: 0;
@@ -739,7 +743,7 @@ body {
 }
 
 .ega-link:hover {
-  color: #3176b1;
+  color: #0099cd;
 }
 
 .disclaimer {
