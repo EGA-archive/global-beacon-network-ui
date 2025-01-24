@@ -7,7 +7,9 @@ function Footer() {
     <Navbar className="custom-footer">
       <Container className="container-footer">
         <footer className="footer">
-          <span className="footer-text">@Copyright 2024. EGA CONSORTIUM</span>
+          <span className="footer-text">
+            @Copyright 2025. Global Beacon Network
+          </span>
         </footer>
       </Container>
     </Navbar>

@@ -17,35 +17,35 @@ function NetworkMembers() {
               <img
                 src="./egalogocolor.png"
                 alt="EGA Logo"
-                className="cell-image egaembllogo"
+                className="cell-image logos"
               />
             </a>
           </div>
 
           <div className="cell">
             <a
-              href="https://www.crg.eu/"
+              href="https://elixir-europe.org/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img
-                src="./crglogo.png"
+                src="./elixirlogo.svg"
                 alt="CRG Logo"
-                className="cell-image crglogo"
+                className="cell-image logos"
               />
             </a>
           </div>
 
           <div className="cell">
             <a
-              href="https://www.ebi.ac.uk/"
+              href="https://gdi.onemilliongenomes.eu/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img
-                src="./embllogo.png"
-                alt="EMBL Logo"
-                className="cell-image egaembllogo"
+                src="./EGDI.svg"
+                alt="European Genomic Data Infrastructure Logo"
+                className="cell-image logos"
               />
             </a>
           </div>

@@ -52,7 +52,7 @@ input:-webkit-autofill:active {
   padding: 0px;
   -moz-border-radius: 30px;
   border-radius: 30px;
-  background-color: #023452;
+  background-color: #0099cd;
   color: white;
   text-align: center;
   font-size: 16px;
@@ -181,18 +181,6 @@ body {
   margin-right: 5%;
 }
 
-@media (max-width: 1180px) {
-  .beacon-title {
-    margin-top: 10px;
-    text-align: center;
-    margin-left: -10%;
-  }
-
-  .crglogotitle {
-    height: 40.2px;
-  }
-}
-
 /* Search CSS */
 
 .search-row {
@@ -215,34 +203,9 @@ body {
   max-width: 100%;
 }
 
-@media (max-width: 1180px) {
-  .search-row {
-    margin-top: 90px;
-    display: flex;
-    flex-wrap: nowrap; /* Ensure all columns stay on the same row */
-    justify-content: flex-start;
-  }
-
-  .searchbutton {
-    width: 122px;
-    height: 40px;
-  }
-
-  .col-variant {
-    flex: 1; /* Make this column take up more space */
-
-    max-width: 40%;
-  }
-
-  .col-refgenome {
-    flex: 2; /* Smaller relative size */
-  }
-
-  .col-searchbutton {
-    flex: 1; /* Smaller relative size */
-    max-width: 30% !important;
-    margin-left: 112px;
-  }
+.logos {
+  width: 220.25px;
+  height: 51.16px;
 }
 
 @media (max-width: 1399px) and (min-width: 1200px) {
@@ -296,6 +259,45 @@ body {
   }
 }
 
+@media (max-width: 1180px) {
+  .beacon-title {
+    margin-top: 10px;
+    text-align: center;
+    margin-left: -10%;
+  }
+
+  .crglogotitle {
+    height: 40.2px;
+  }
+  .search-row {
+    margin-top: 90px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .searchbutton {
+    width: 122px;
+    height: 40px;
+  }
+
+  .col-variant {
+    flex: 1;
+
+    max-width: 40%;
+  }
+
+  .col-refgenome {
+    flex: 2;
+  }
+
+  .col-searchbutton {
+    flex: 1;
+    max-width: 30% !important;
+    margin-left: 112px;
+  }
+}
+
 @media (max-width: 1180px) and (min-width: 992px) {
   .search-row {
     margin-top: 70px;
@@ -326,6 +328,18 @@ body {
     margin-left: 50px;
   }
 }
+
+@media (max-width: 991px) and (min-width: 766px) {
+  .bnmembers-container {
+    display: block !important;
+  }
+
+  .logos {
+    width: 164.49px;
+    height: 94.45px;
+  }
+}
+
 /* Working here: */
 @media (max-width: 767px) and (min-width: 600px) {
   .search-row {
@@ -339,7 +353,7 @@ body {
   .col-variant,
   .col-refgenome,
   .col-searchbutton {
-    width: 100%; /* Take full width */
+    width: 100%;
   }
 
   .col-searchbutton {
@@ -369,104 +383,21 @@ body {
   }
 
   .ref-genome-label {
-    white-space: nowrap; /* Prevents text wrapping */
-  }
-
-  .example-span {
-    margin-top: 60px !important;
-  }
-
-  .bnmembers-container {
-    display: block !important;
-  }
-
-  .egaembllogo {
-    width: 248px;
-    height: 71.97px;
-  }
-
-  .crglogo {
-    width: 164.49px;
-    height: 94.45px;
-  }
-
-  /* .footer {
-    padding-left: 5%;
-  } */
-}
-
-/* TODO: Start working from here */
-@media (max-width: 575px) and (min-width: 425px) {
-  .search-row {
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 60px;
-    height: auto;
-  }
-
-  .col-variant,
-  .col-refgenome,
-  .col-searchbutton {
-    width: 100%;
-  }
-
-  .col-searchbutton {
-    margin-left: 0;
-    margin-top: 0;
-  }
-
-  .searchbutton {
-    width: 580px;
-    text-align: center;
-  }
-
-  .button-text-icon {
-    margin-left: 40%;
-    justify-content: center;
-    align-items: center;
-  }
-  .beacon-title {
-    margin-right: 10%;
-  }
-
-  .beacon-title {
-    margin-top: 10px;
-    font-size: 18px;
-    margin-left: 10px;
-  }
-
-  .crglogotitle {
-    height: 35.2px;
-    margin-left: 6%;
-  }
-
-  .ref-genome-label {
-    white-space: nowrap; /* Prevents text wrapping */
-  }
-
-  .example-span {
-    margin-top: 60px !important;
-  }
-
-  .bnmembers-container {
-    display: block !important;
-  }
-
-  .egaembllogo {
-    width: 248px;
-    height: 71.97px;
-  }
-
-  .crglogo {
-    width: 164.49px;
-    height: 94.45px;
-  }
-
-  .footer {
-    /* padding-left: 5%; */
     white-space: nowrap;
+  }
+
+  .example-span {
+    margin-top: 60px !important;
+  }
+
+  .bnmembers-container {
+    display: block !important;
+  }
+
+  .logos {
+    width: 164.49px;
+    height: 94.45px;
+    background-color: red;
   }
 }
 
@@ -523,18 +454,88 @@ body {
     display: block !important;
   }
 
-  .egaembllogo {
+  /* .egaembllogo {
     width: 248px;
     height: 71.97px;
-  }
+  } */
 
-  .crglogo {
+  .logos {
     width: 164.49px;
     height: 94.45px;
+    background-color: brown;
   }
 
   .footer {
-    /* padding-left: 5%; */
+    white-space: nowrap;
+  }
+}
+
+/* TODO: Start working from here */
+@media (max-width: 575px) and (min-width: 425px) {
+  .search-row {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 60px;
+    height: auto;
+  }
+
+  .col-variant,
+  .col-refgenome,
+  .col-searchbutton {
+    width: 100%;
+  }
+
+  .col-searchbutton {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .searchbutton {
+    width: 580px;
+    text-align: center;
+  }
+
+  .button-text-icon {
+    margin-left: 40%;
+    justify-content: center;
+    align-items: center;
+  }
+  .beacon-title {
+    margin-right: 10%;
+  }
+
+  .beacon-title {
+    margin-top: 10px;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .crglogotitle {
+    height: 35.2px;
+    margin-left: 6%;
+  }
+
+  .ref-genome-label {
+    white-space: nowrap;
+  }
+
+  .example-span {
+    margin-top: 60px !important;
+  }
+
+  .bnmembers-container {
+    display: block !important;
+  }
+
+  .logos {
+    width: 164.49px;
+    height: 94.45px;
+    background-color: deepskyblue;
+  }
+
+  .footer {
     white-space: nowrap;
   }
 }
@@ -585,6 +586,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 60px;
 }
 
 .cell {
@@ -596,19 +598,14 @@ body {
 }
 
 .cell-image {
-  max-height: 51.16px;
-  max-width: 220.25px;
+  width: 248px;
+  height: 71.97px;
   object-fit: contain;
 }
 
-.egaembllogo {
-  width: 248px;
-  height: 71.97px;
-}
-
-.crglogo {
-  width: 164.49px;
-  height: 94.45px;
+.logos {
+  width: 220.25px;
+  height: 51.16px;
 }
 
 .lupared {
