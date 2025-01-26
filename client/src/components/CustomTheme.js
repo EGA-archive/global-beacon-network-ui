@@ -17,41 +17,41 @@ const customTheme = createTheme({
           "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
             border: "1px solid #3176B1 !important",
           },
-          "@media (max-width: 1180px)": {
-            width: "270px",
-          },
-          "@media (max-width: 1199px) and (min-width: 1181px)": {
-            "&.variant-autocomplete .MuiOutlinedInput-root": {
-              width: "520px",
-            },
-            "&.genome-autocomplete .MuiOutlinedInput-root": {
-              width: "270px",
-            },
-          },
-          "@media (max-width: 1180px) and (min-width: 992px)": {
-            "&.variant-autocomplete .MuiOutlinedInput-root": {
-              width: "502px",
-            },
-            "&.genome-autocomplete .MuiOutlinedInput-root": {
-              width: "300px",
-            },
-          },
-          "@media (max-width: 767px) and (min-width: 576px)": {
-            "&.variant-autocomplete .MuiOutlinedInput-root": {
-              width: "510px",
-            },
-            "&.genome-autocomplete .MuiOutlinedInput-root": {
-              width: "510px",
-            },
-          },
-          "@media (max-width: 575px) and (min-width: 425px)": {
-            "&.variant-autocomplete .MuiOutlinedInput-root": {
-              width: "580px",
-            },
-            "&.genome-autocomplete .MuiOutlinedInput-root": {
-              width: "580px",
-            },
-          },
+          // "@media (max-width: 1180px)": {
+          //   width: "270px",
+          // },
+          // "@media (max-width: 1199px) and (min-width: 1181px)": {
+          //   "&.variant-autocomplete .MuiOutlinedInput-root": {
+          //     width: "520px",
+          //   },
+          //   "&.genome-autocomplete .MuiOutlinedInput-root": {
+          //     width: "270px",
+          //   },
+          // },
+          // "@media (max-width: 1180px) and (min-width: 992px)": {
+          //   "&.variant-autocomplete .MuiOutlinedInput-root": {
+          //     width: "502px",
+          //   },
+          //   "&.genome-autocomplete .MuiOutlinedInput-root": {
+          //     width: "300px",
+          //   },
+          // },
+          // "@media (max-width: 767px) and (min-width: 576px)": {
+          //   "&.variant-autocomplete .MuiOutlinedInput-root": {
+          //     width: "510px",
+          //   },
+          //   "&.genome-autocomplete .MuiOutlinedInput-root": {
+          //     width: "510px",
+          //   },
+          // },
+          // "@media (max-width: 575px) and (min-width: 425px)": {
+          //   "&.variant-autocomplete .MuiOutlinedInput-root": {
+          //     width: "480px",
+          //   },
+          //   "&.genome-autocomplete .MuiOutlinedInput-root": {
+          //     width: "480px",
+          //   },
+          // },
         },
         paper: {
           // Styles for the dropdown popover
@@ -98,6 +98,18 @@ const customTheme = createTheme({
         },
       },
     },
+    // Mui Grid Responsivness
+    // MuiGrid2: {
+    //   styleOverrides: {
+    //     root: {
+    //       "--Grid-columnSpacing": "31px !important",
+    //       "--Grid-rowSpacing": "23px !important",
+    //       "@media (max-width: 1199px) and (min-width: 1181px)": {
+    //         "--Grid-columnSpacing": "18px !important",
+    //       },
+    //     },
+    //   },
+    // },
   },
 });
 

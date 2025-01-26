@@ -8,6 +8,7 @@ import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
 import { ThemeProvider } from "@mui/material/styles";
 import CustomTheme from "../components/CustomTheme";
+import Grid from "@mui/material/Grid2";
 
 const SignupSchema = Yup.object().shape({
   variant: Yup.string()
@@ -85,10 +86,16 @@ function Search({ search, setVariant }) {
             };
 
             return (
-              <Form noValidate onSubmit={handleSubmit}>
+              <Form
+                noValidate
+                onSubmit={handleSubmit}
+                className="mainsearch-container"
+              >
                 <Form.Group>
-                  <Row className="search-row">
-                    <Col className="col-variant">
+                  {/* <Row className="search-row">
+                    <Col className="col-variant"> */}
+                  <Grid container spacing={2} className="search-row">
+                    <Grid size={{ xs: 12, sm: 6 }}>
                       <Form.Label>
                         <b className="variant-query">Variant query</b>
                         <Tooltip
@@ -111,7 +118,8 @@ function Search({ search, setVariant }) {
 
                       {/* Variant Field */}
                       <Autocomplete
-                        className="variant-autocomplete"
+                        fullWidth
+                        // className="variant-autocomplete"
                         freeSolo
                         options={[]}
                         value={values.variant}
@@ -123,6 +131,7 @@ function Search({ search, setVariant }) {
                         renderInput={(params) => (
                           <TextField
                             {...params}
+                            fullWidth
                             placeholder="Insert your variant"
                             size="small"
                             onPaste={handlePaste}
@@ -144,9 +153,11 @@ function Search({ search, setVariant }) {
                           />
                         )}
                       />
-                    </Col>
+                    </Grid>
+                    {/* </Col> */}
 
-                    <Col className="col-refgenome">
+                    {/* <Col className="col-refgenome"> */}
+                    <Grid size={{ xs: 12, sm: 4 }}>
                       <Form.Label
                         htmlFor="ref-genome"
                         className="ref-genome-label"
@@ -180,10 +191,12 @@ function Search({ search, setVariant }) {
                           />
                         )}
                       />
-                    </Col>
+                    </Grid>
+                    {/* </Col> */}
 
                     {/* Search button */}
-                    <Col className="col-searchbutton">
+                    {/* <Col className="col-searchbutton"> */}
+                    <Grid size={{ xs: 12, sm: 2 }}>
                       <button
                         className="searchbutton"
                         type="submit"
@@ -194,20 +207,28 @@ function Search({ search, setVariant }) {
                           <div className="lupared"></div>Search
                         </div>
                       </button>
-                    </Col>
-                  </Row>
+                      {/* </Col> */}
+                      {/* </Row> */}
+                    </Grid>
+                  </Grid>
                 </Form.Group>
 
                 {/* Example Section */}
-                <div className="example-span">
-                  <span>Example: </span>
-                  <a
-                    type="reset"
-                    onClick={() => setFieldValue("variant", "21-19653341-AT-A")}
-                  >
-                    <u className="example">21-19653341-AT-A</u>
-                  </a>
-                </div>
+                {/* <div className="example-span"> */}
+                <Grid container className="example-span">
+                  <Grid xs={12} sm="auto">
+                    <span>Example: </span>
+                    <a
+                      type="reset"
+                      onClick={() =>
+                        setFieldValue("variant", "21-19653341-AT-A")
+                      }
+                    >
+                      <u className="example">21-19653341-AT-A</u>
+                    </a>
+                  </Grid>
+                </Grid>
+                {/* </div> */}
               </Form>
             );
           }}
