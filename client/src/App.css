@@ -151,20 +151,9 @@ body {
   padding-left: 20px;
 }
 
-.col-variant {
-  flex: 0 0 62%;
-  max-width: 100%;
-}
-
 .logos {
   width: 220.25px;
   height: 51.16px;
-}
-
-.col-refgenome {
-  width: 92px;
-  flex: 0 0 24%;
-  max-width: 100%;
 }
 
 .searchbutton {
@@ -184,256 +173,6 @@ body {
   position: relative;
   top: 30px;
   margin: 0;
-}
-
-@media (max-width: 1399px) and (min-width: 1200px) {
-  .beacon-title {
-    margin-top: 10px;
-    text-align: center;
-  }
-}
-
-@media (max-width: 1199px) and (min-width: 1181px) {
-  .beacon-title {
-    margin-top: 10px;
-    text-align: center;
-  }
-}
-
-@media (max-width: 1180px) {
-  .bsc {
-    margin-left: 15%;
-  }
-  .beacon-title {
-    margin-top: 10px;
-    text-align: center;
-    margin-left: 15%;
-  }
-
-  .crglogotitle {
-    height: 40.2px;
-  }
-}
-
-@media (max-width: 1180px) and (min-width: 992px) {
-  .beacon-title {
-    margin-top: 10px;
-    text-align: center;
-    margin-left: 50px;
-  }
-}
-
-@media (max-width: 991px) and (min-width: 766px) {
-  .bnmembers-container {
-    display: block !important;
-  }
-
-  .logos {
-    width: 164.49px;
-    height: 94.45px;
-  }
-}
-
-/* Working here: */
-@media (max-width: 767px) and (min-width: 600px) {
-  .beacon-title {
-    margin-top: 10px;
-    font-size: 18px;
-    margin-left: 10px;
-  }
-
-  .crglogotitle {
-    height: 35.2px;
-  }
-
-  .example-span {
-    margin-top: 60px !important;
-  }
-
-  .bnmembers-container {
-    display: block !important;
-  }
-
-  .bnmembers-grid {
-    gap: 0px !important;
-  }
-
-  .logos {
-    width: 139.82px;
-    height: 80.28px;
-  }
-}
-
-@media (max-width: 599px) and (min-width: 576px) {
-  .preventover {
-    margin-top: -30px;
-  }
-
-  .beacon-title {
-    margin-top: 10px;
-    font-size: 18px;
-    margin-left: 10px;
-  }
-
-  .crglogotitle {
-    height: 35.2px;
-  }
-
-  .ref-genome-label {
-    white-space: nowrap;
-  }
-
-  .example-span {
-    margin-top: 60px !important;
-  }
-
-  .bnmembers-container {
-    display: block !important;
-  }
-
-  .bnmembers-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 10px !important;
-    margin-bottom: 20px;
-    align-items: flex-start !important;
-    margin-left: 30px;
-  }
-
-  .logos {
-    width: 164.49px;
-    height: 94.45px;
-  }
-
-  .footer {
-    white-space: nowrap;
-  }
-}
-
-@media (max-width: 575px) and (min-width: 425px) {
-  .preventover {
-    margin-top: -30px;
-  }
-
-  .beacon-title {
-    margin-top: 10px;
-    font-size: 18px;
-    margin-left: 10px;
-  }
-
-  .crglogotitle {
-    height: 35.2px;
-  }
-
-  .bsc {
-    margin-left: 7px;
-  }
-
-  .ref-genome-label {
-    white-space: nowrap;
-  }
-
-  .example-span {
-    margin-top: 60px !important;
-  }
-
-  .bnmembers-container {
-    display: block !important;
-  }
-
-  .bnmembers-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 10px !important;
-    margin-bottom: 20px;
-    align-items: flex-start !important;
-    margin-left: 30px;
-  }
-
-  .footer {
-    white-space: nowrap;
-  }
-}
-
-@media (max-width: 424px) and (min-width: 0px) {
-  .preventover {
-    margin-top: -30px;
-  }
-
-  .beacon-title {
-    margin-top: 10px;
-    font-size: 18px;
-    margin-left: 10px;
-  }
-
-  .crglogotitle {
-    height: 35.2px;
-  }
-
-  .bsc {
-    margin-left: 7px;
-  }
-
-  .ref-genome-label {
-    white-space: nowrap;
-  }
-
-  .example-span {
-    margin-top: 60px !important;
-  }
-
-  .bnmembers-container {
-    display: block !important;
-  }
-
-  .bnmembers-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 10px !important;
-    margin-bottom: 20px;
-    align-items: flex-start !important;
-    margin-left: 30px;
-  }
-
-  .footer {
-    white-space: nowrap;
-  }
-}
-
-/* Network CSS */
-
-.bnmembers-container {
-  height: auto;
-  display: flex;
-  flex-direction: row !important;
-  align-items: center;
-  justify-content: center;
-}
-
-.bnmembers-grid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-}
-
-.cell {
-  width: 248px;
-  height: 71.97px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.cell-image {
-  width: 248px;
-  height: 71.97px;
-  object-fit: contain;
-}
-
-.logos {
-  width: 220.25px;
-  height: 51.16px;
 }
 
 .lupared {
@@ -486,6 +225,183 @@ body {
 
 .example {
   color: blue;
+}
+
+@media (max-width: 1399px) and (min-width: 1200px) {
+  .beacon-title {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 1181px) {
+  .beacon-title {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1180px) {
+  .bsc {
+    margin-left: 15%;
+  }
+  .beacon-title {
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 15%;
+  }
+
+  .crglogotitle {
+    height: 40.2px;
+  }
+}
+
+@media (max-width: 1180px) and (min-width: 992px) {
+  .beacon-title {
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 766px) {
+  .logos {
+    width: 164.49px;
+    height: 94.45px;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 600px) {
+  .beacon-title {
+    margin-top: 10px;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .crglogotitle {
+    height: 35.2px;
+  }
+
+  .example-span {
+    margin-top: 60px !important;
+  }
+
+  .logos {
+    width: 139.82px;
+    height: 80.28px;
+  }
+}
+
+@media (max-width: 599px) and (min-width: 576px) {
+  .preventover {
+    margin-top: -30px;
+  }
+
+  .beacon-title {
+    margin-top: 10px;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .crglogotitle {
+    height: 35.2px;
+  }
+
+  .ref-genome-label {
+    white-space: nowrap;
+  }
+
+  .example-span {
+    margin-top: 60px !important;
+  }
+
+  .logos {
+    width: 164.49px;
+    height: 94.45px;
+  }
+
+  .footer {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 575px) and (min-width: 425px) {
+  .preventover {
+    margin-top: -30px;
+  }
+
+  .beacon-title {
+    margin-top: 10px;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .crglogotitle {
+    height: 35.2px;
+  }
+
+  .bsc {
+    margin-left: 7px;
+  }
+
+  .ref-genome-label {
+    white-space: nowrap;
+  }
+
+  .example-span {
+    margin-top: 60px !important;
+  }
+
+  .footer {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 424px) and (min-width: 0px) {
+  .preventover {
+    margin-top: -30px;
+  }
+
+  .beacon-title {
+    margin-top: 10px;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .crglogotitle {
+    height: 35.2px;
+  }
+
+  .bsc {
+    margin-left: 7px;
+  }
+
+  .ref-genome-label {
+    white-space: nowrap;
+  }
+
+  .example-span {
+    margin-top: 60px !important;
+  }
+
+  .footer {
+    white-space: nowrap;
+  }
+}
+
+/* Network CSS */
+
+.cell {
+  width: 248px;
+  height: 71.97px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logos {
+  width: 220.25px;
+  height: 51.16px;
 }
 
 /* Queried Variant CSS */
@@ -701,16 +617,6 @@ tbody tr:hover {
   }
 }
 
-/* Dialog Styling
-.mail-dialog-title {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 900;
-  line-height: 24px;
-  letter-spacing: 0.5px;
-  color: #902b43;
-} */
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -804,20 +710,4 @@ tbody tr:hover {
 .logo {
   font-family: "Patua One", sans-serif;
   font-weight: 400;
-}
-
-.landing {
-  font-size: 72px;
-}
-
-.middle-center {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 120px;
-  margin: auto auto;
-  position: absolute;
-  text-align: center;
 }

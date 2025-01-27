@@ -1,4 +1,5 @@
 import React from "react";
+import Grid from "@mui/material/Grid2";
 
 function NetworkMembers() {
   return (
@@ -6,36 +7,55 @@ function NetworkMembers() {
       <p className="lead mt-5 mb-4">
         <b>Institutions involved</b>
       </p>
-      <div className="bnmembers-container">
-        <div className="bnmembers-grid">
+      <Grid container spacing={6} justifyContent="center">
+        <Grid
+          xs={12}
+          sm={4}
+          md={4}
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          sx={{ maxWidth: "250px", width: "100%" }}
+        >
           <div className="cell">
             <a
               href="https://ega-archive.org/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                src="./egalogocolor.png"
-                alt="EGA Logo"
-                className="cell-image logos"
-              />
+              <img src="./egalogocolor.png" alt="EGA Logo" className="logos" />
             </a>
           </div>
+        </Grid>
 
+        <Grid
+          xs={12}
+          sm={4}
+          md={4}
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          sx={{ maxWidth: "250px", width: "100%" }}
+        >
           <div className="cell">
             <a
               href="https://elixir-europe.org/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                src="./elixirlogo.svg"
-                alt="CRG Logo"
-                className="cell-image logos"
-              />
+              <img src="./elixirlogo.svg" alt="CRG Logo" className="logos" />
             </a>
           </div>
-
+        </Grid>
+        <Grid
+          xs={12}
+          sm={4}
+          md={4}
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          sx={{ maxWidth: "250px", width: "100%" }}
+        >
           <div className="cell">
             <a
               href="https://gdi.onemilliongenomes.eu/"
@@ -45,12 +65,12 @@ function NetworkMembers() {
               <img
                 src="./EGDI.svg"
                 alt="European Genomic Data Infrastructure Logo"
-                className="cell-image logos"
+                className="logos"
               />
             </a>
           </div>
-        </div>
-      </div>
+        </Grid>
+      </Grid>
     </div>
   );
 }

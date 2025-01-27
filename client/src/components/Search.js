@@ -1,9 +1,9 @@
 import * as React from "react";
 import Tooltip from "@mui/material/Tooltip";
 import { Formik } from "formik";
-import { Col, Container, Form, Row } from "react-bootstrap";
+import { Container, Form } from "react-bootstrap";
 import * as Yup from "yup";
-import { styled } from "@mui/material/styles";
+
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
 import { ThemeProvider } from "@mui/material/styles";
@@ -86,14 +86,8 @@ function Search({ search, setVariant }) {
             };
 
             return (
-              <Form
-                noValidate
-                onSubmit={handleSubmit}
-                className="mainsearch-container"
-              >
+              <Form noValidate onSubmit={handleSubmit}>
                 <Form.Group>
-                  {/* <Row className="search-row">
-                    <Col className="col-variant"> */}
                   <Grid container spacing={2} className="search-row">
                     <Grid size={{ xs: 12, sm: 6 }}>
                       <Form.Label>
@@ -119,7 +113,6 @@ function Search({ search, setVariant }) {
                       {/* Variant Field */}
                       <Autocomplete
                         fullWidth
-                        // className="variant-autocomplete"
                         freeSolo
                         options={[]}
                         value={values.variant}
@@ -154,9 +147,7 @@ function Search({ search, setVariant }) {
                         )}
                       />
                     </Grid>
-                    {/* </Col> */}
 
-                    {/* <Col className="col-refgenome"> */}
                     <Grid size={{ xs: 12, sm: 4 }}>
                       <Form.Label
                         htmlFor="ref-genome"
@@ -165,7 +156,6 @@ function Search({ search, setVariant }) {
                         <b>Ref Genome</b>
                       </Form.Label>
                       <Autocomplete
-                        className="genome-autocomplete"
                         disablePortal
                         options={refGenome}
                         name="genome"
@@ -192,10 +182,8 @@ function Search({ search, setVariant }) {
                         )}
                       />
                     </Grid>
-                    {/* </Col> */}
 
                     {/* Search button */}
-                    {/* <Col className="col-searchbutton"> */}
                     <Grid size={{ xs: 12, sm: 2 }}>
                       <button
                         className="searchbutton"
@@ -203,18 +191,15 @@ function Search({ search, setVariant }) {
                         variant="primary"
                         disabled={errors.variant || errors.genome}
                       >
-                        <div className="button-text-icon">
+                        <div>
                           <div className="lupared"></div>Search
                         </div>
                       </button>
-                      {/* </Col> */}
-                      {/* </Row> */}
                     </Grid>
                   </Grid>
                 </Form.Group>
 
                 {/* Example Section */}
-                {/* <div className="example-span"> */}
                 <Grid container className="example-span">
                   <Grid xs={12} sm="auto">
                     <span>Example: </span>
@@ -228,7 +213,6 @@ function Search({ search, setVariant }) {
                     </a>
                   </Grid>
                 </Grid>
-                {/* </div> */}
               </Form>
             );
           }}
