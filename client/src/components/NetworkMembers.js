@@ -7,7 +7,12 @@ function NetworkMembers() {
       <p className="lead mt-5 mb-4">
         <b>Institutions involved</b>
       </p>
-      <Grid container spacing={6} justifyContent="center">
+      <Grid
+        container
+        spacing={6}
+        justifyContent="center"
+        sx={{ marginBottom: "50px" }}
+      >
         <Grid
           xs={12}
           sm={4}
