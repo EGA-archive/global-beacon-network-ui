@@ -5,7 +5,7 @@ function NetworkMembers() {
   return (
     <div>
       <p className="lead mt-5 mb-4">
-        <b>Institutions involved</b>
+        <b>Global Beacon Network Members</b>
       </p>
       <Grid
         container

@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 const CustomNavbar = () => {
   return (
     <Navbar className="custom-navbar">
-      <Container>
+      <Container className="container-navbar">
         <a
           className="crglogotitle"
           href="https://crg.eu"

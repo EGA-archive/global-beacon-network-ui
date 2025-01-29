@@ -80,15 +80,13 @@ body {
 .footer {
   background: #e2e2e2;
   width: 100vw;
-  height: 49px !important;
-  padding: 10px 0px 0px 0px;
   z-index: 2;
 }
 
 .custom-footer {
   background: #e2e2e2;
   border: none;
-  height: 49px !important;
+  height: 82px !important;
 }
 
 .footer-text {
@@ -97,10 +95,22 @@ body {
 
 .container-footer {
   padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.project-collaborators {
+  font-size: 12px;
+  font-weight: 700;
+  color: #a0a0a0;
 }
 
 /* Navbar CSS */
-
+.container-navbar {
+  padding-left: 0;
+}
 .custom-navbar {
   background: #0099cd;
   border: none;
